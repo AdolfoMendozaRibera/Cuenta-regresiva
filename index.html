@@ -1,0 +1,69 @@
+<!--Esta es la declaración DOCTYPE, que le dice al navegador que se está utilizando HTML5.-->
+<!DOCTYPE html>
+<!--Esta etiqueta indica que el lenguaje utilizado en la página es español.-->
+<html lang="es">
+<!--Esta etiqueta contiene metadatos y enlaces a archivos CSS y JavaScript.-->
+<head>
+    <!--Esta etiqueta especifica que el juego de caracteres utilizado en la página es UTF-8, que es el más comúnmente utilizado en la web.-->
+    <meta charset="UTF-8">
+    <!--Esta etiqueta le dice al navegador que utilice la versión más reciente del motor de renderizado de Internet Explorer.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Esta etiqueta indica al navegador cómo ajustar el tamaño de la página para adaptarse a diferentes tamaños de pantalla.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Esta etiqueta enlaza el archivo CSS estilo.css a la página HTML para aplicar estilos a los elementos HTML.-->
+    <link rel="stylesheet" href="estilo.css">
+    <!--Esta etiqueta define el título de la página que se mostrará en la pestaña del navegador.-->
+    <title>Pestañas con diferentes contenido</title>    
+</head>
+
+<!-- Esta etiqueta contiene todo el contenido visible de la página.-->
+<body>
+    <!-- Este es un contenedor para el contenido principal de la página.-->
+    <div id="venta_producto">
+        <!--Esta etiqueta muestra una imagen del producto.-->
+        <img src="producto/celular.jpg">
+        <!--Este es un contenedor para la descripción del producto y la cuenta regresiva.-->
+        <div id="descripcion">
+            <!--Este es el título principal de la página que describe el producto.-->
+            <h1>Nuevo celular samsung xp-8</h1>
+            <!--Este es un subtitulo que muestra la fecha y hora de finalización de la cuenta regresiva.-->
+            <h2>En todas las tiendas samsung, 2025, 31 de marzo, 00:00 pm </h2>
+            <!--Este es un párrafo de texto que describe las características del producto.-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut exercitationem, 
+                corrupti aperiam eius perferendis maiores porro error optio architecto a modi molestias 
+                minus officia ea quod alias dolorum aut. Dignissimos quibusdam, facere perferendis minus 
+                commodi vero sequi? Iste, voluptatem?
+            </p>
+            <!--Esta etiqueta define una lista no ordenada que contiene elementos de la cuenta regresiva.-->
+            <ul id="tiempo">
+                <li>
+                    <!--Este es un elemento de texto que muestra la cantidad de días restantes.-->
+                    <p id="dias">0</p>
+                    <p>DIAS</p>
+                </li>
+                <li>
+                    <!--Este es un elemento de texto que muestra la cantidad de horas restantes.-->
+                    <p id="horas">0</p>
+                    <p>HORAS</p>
+                </li>
+                <li>
+                    <!--Este es un elemento de texto que muestra la cantidad de minutos restantes.-->
+                    <p id="minutos">0</p>
+                    <p>MINUTOS</p>
+                </li>
+                <li>
+                    <!--Este es un elemento de texto que muestra la cantidad de segundos restantes.-->
+                    <p id="segundos">0</p>
+                    <p>SEGUNDOS</p>
+                </li>
+            </ul>
+            <!--Un elemento que mostrara un aviso cuando el producto ya este disponible-->
+            <p id="aviso"></p>
+        </div>
+
+    </div>
+    <script src="codigo.js"></script>
+</body>
+</html>
+
+
